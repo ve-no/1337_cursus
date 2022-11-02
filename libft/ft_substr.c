@@ -6,7 +6,7 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:54:15 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/10/31 18:22:47 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/02 15:00:44 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (p);
 }
 
-int main()
-{
-	char *str = ft_substr("hello\nworld",6,4);
-	printf (":%s:\t", str);
-}
+// int main()
+// {
+// 	char *str = ft_substr("hello\nworld",6,4);
+// 	printf (":%s:\t", str);
+// }

@@ -6,14 +6,14 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:47:38 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/02 12:25:02 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/02 16:58:59 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
 #ifndef BUFFER_SIZE
-# define BUFFER_SIZE 1
+# define BUFFER_SIZE 1000
 #endif
 
 char	*ft_get_line(char *str)
@@ -67,6 +67,7 @@ char	*ft_save(char *str)
 		s[c++] = str[i++];
 	s[c] = '\0';
 	free(str);
+	str = NULL;
 	return (s);
 }
 
@@ -108,3 +109,13 @@ char	*get_next_line(int fd)
 	str = ft_save(str);
 	return (line);
 }
+
+// int main()
+// {
+// 	int fd = open("/Users/ael-bako/Desktop/42cursus/get_next_line/open_close_open.txt", O_RDONLY);
+// 	char *str;
+
+// 	str = get_next_line(fd);
+// 	printf("%s",str);
+// 	system("leaks a.out");
+// }
