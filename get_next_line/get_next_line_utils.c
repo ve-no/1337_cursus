@@ -6,11 +6,24 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:47:49 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/01 12:02:28 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/02 12:25:35 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+
+size_t	ft_strlen(char *str)
+{
+	size_t	c;
+
+	c = 0;
+	if (!str)
+		return (0);
+	while (str[c] != '\0')
+		c++;
+	return (c);
+}
 
 char	*ft_strchr(char *s, int c)
 {
@@ -57,58 +70,3 @@ char	*ft_strjoin(char *s1, char *s2)
 	free(s1);
 	return (str);
 }
-
-char	*ft_strdup(char *s1)
-{
-	size_t	size;
-	size_t	i;
-	char	*str;
-
-	size = ft_strlen(s1) + 1;
-	i = 0;
-	str = (char *)malloc(size);
-	if (!str)
-		return (NULL);
-	while (s1[i])
-	{
-		str[i] = s1[i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
-
-size_t	ft_strlen(char *str)
-{
-	size_t	i;
-
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i])
-		i++;
-	return (i);
-}
-
-// char	*ft_substr(char *s, unsigned int start, size_t len)
-// {
-// 	char	*p;
-// 	size_t	i;
-// 	size_t	s_len;
-
-// 	if (!s)
-// 		return (NULL);
-// 	s_len = ft_strlen(s);
-// 	i = 0;
-// 	if (s_len - 1 < start || s_len == 0)
-// 		return (ft_strdup(""));
-// 	if (len > s_len - (size_t)start)
-// 		len = s_len - (size_t)start;
-// 	p = malloc(len + 1);
-// 	if (!p)
-// 		return (NULL);
-// 	while (len > i && s[start] != '\0')
-// 		p[i++] = s[start++];
-// 	p[i] = '\0';
-// 	return (p);
-// }

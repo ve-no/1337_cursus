@@ -6,11 +6,15 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:47:38 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/01 12:08:23 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/02 12:25:02 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 1
+#endif
 
 char	*ft_get_line(char *str)
 {
@@ -78,7 +82,6 @@ char	*ft_read(int fd, char *str)
 	while (readed != 0 && !ft_strchr(str, '\n'))
 	{
 		readed = read(fd, buffer, BUFFER_SIZE);
-		// printf("%s\n",buffer);
 		if (readed == -1)
 		{
 			free(buffer);
@@ -105,23 +108,3 @@ char	*get_next_line(int fd)
 	str = ft_save(str);
 	return (line);
 }
-
-// int main()
-// {
-// 	int fd = open("text.txt", O_RDONLY);
-// 	char *str;
-// 	// str = get_next_line(fd);
-// 	// str = get_next_line(fd);
-// 	str = get_next_line(fd);
-// 	printf("::::%s:::\n",str);
-// 	str = get_next_line(fd);
-// 	printf("::::%s:::\n",str);
-// 	// get_next_line(fd);
-// 	// str = get_next_line(fd);
-// 	// printf("::::%s:::\n",str);
-// 	// str = get_next_line(fd);
-// 	// printf("::::%s:::\n",str);
-// 	// printf("::::%d:::",fd);
-// 	// system("leaks a.out");
-// }
-

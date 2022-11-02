@@ -6,7 +6,7 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 11:08:21 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/01 11:18:51 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/02 11:46:00 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,13 +64,10 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (print_count);
 }
-// int main()
-// {
-// 	char *format;
-// 	format = "slasesda";
-// 	ft_printf("%d\n", format);
-// 	printf("%s\n", format);
-// 	printf("%p\n", format);
-// 	printf("%x", 245682062);
-// 	// ft_printf("%s\n");
-// }
+int main()
+{
+	char *format = "kliyb";
+	char *s = "%d %s%";
+	ft_printf(s, 200, "ded");
+	// ft_printf("%s\n");
+}
