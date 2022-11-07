@@ -6,7 +6,7 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 11:08:21 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/02 13:26:58 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/05 17:52:08 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,11 +63,4 @@ int	ft_printf(const char *format, ...)
 	}
 	va_end(args);
 	return (print_count);
-}
-int main()
-{
-	char *format = "kliyb";
-	char *s = "%d %s%";
-	ft_printf(s, 200, "ded");
-	// ft_printf("%s\n");
 }

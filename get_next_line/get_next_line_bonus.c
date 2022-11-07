@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_BONUS.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:47:38 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/03 19:04:08 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/03 18:17:38 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 #ifndef BUFFER_SIZE
 # define BUFFER_SIZE 100
@@ -97,14 +97,14 @@ char	*ft_read(int fd, char *str)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*str;
+	static char	*str[OPEN_MAX];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	str = ft_read(fd, str);
-	if (!str)
+	str[fd] = ft_read(fd, str[fd]);
+	if (!str[fd])
 		return (NULL);
-	line = ft_get_line(str);
-	str = ft_save(str);
+	line = ft_get_line(str[fd]);
+	str[fd] = ft_save(str[fd]);
 	return (line);
 }
