@@ -1,0 +1,10 @@
+get_next_line_42sp
+.gitignore
+a.out
+*.o
+*.a
+*.txt
+.vscode
+.DS_Store
+push_gnl
+main.c
