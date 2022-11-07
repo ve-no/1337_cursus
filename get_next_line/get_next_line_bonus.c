@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_BONUS.c                              :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:47:38 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/11/03 18:17:38 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/11/07 08:51:04 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ char	*ft_read(int fd, char *str)
 		readed = read(fd, buffer, BUFFER_SIZE);
 		if (readed == -1)
 		{
+			free(str);
 			free(buffer);
 			return (NULL);
 		}
