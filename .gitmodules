@@ -1,0 +1,3 @@
+[submodule "examRank-02"]
+	path = examRank-02
+	url = git@github.com:Aelbakouri/examRank-02.git
