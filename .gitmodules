@@ -1,3 +1,6 @@
 [submodule "examRank-02"]
 	path = examRank-02
 	url = git@github.com:Aelbakouri/examRank-02.git
+[submodule "ft_printf"]
+	path = ft_printf
+	url = git@github.com:Aelbakouri/ft_printf.git
