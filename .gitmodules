@@ -1,6 +1,6 @@
-[submodule "examRank-02"]
-	path = examRank-02
-	url = git@github.com:Aelbakouri/examRank-02.git
+[submodule "libft"]
+	path = libft
+	url = git@github.com:Aelbakouri/libft.git
 [submodule "ft_printf"]
 	path = ft_printf
 	url = git@github.com:Aelbakouri/ft_printf.git
@@ -9,6 +9,11 @@
 	path = get_next_line
 	url = git@github.com:Aelbakouri/get_next_line.git
 
-[submodule "libft"]
-	path = libft
-	url = git@github.com:Aelbakouri/libft.git
+[submodule "Pipex"]
+	path = Pipex
+	url = git@github.com:Aelbakouri/Pipex.git
+
+[submodule "examRank-02"]
+	path = examRank-02
+	url = git@github.com:Aelbakouri/examRank-02.git
+
