@@ -4,7 +4,9 @@
 		"fcntl.h": "c",
 		"libftprintf.h": "c",
 		"stdarg.h": "c",
-		"ft_printf.h": "c"
+		"ft_printf.h": "c",
+		"errno.h": "c",
+		"pipex.h": "c"
 	},
 	"C_Cpp.errorSquiggles": "Disabled"
 }
