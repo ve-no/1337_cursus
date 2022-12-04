@@ -4,13 +4,13 @@ CC = clang
 
 CFLAGS = -Wall -Wextra -Werror
 
-HEADER = pipex.h
+INC = ./inc/pipex.h
 
-SRC = pipex.c utils.c
+SRC = ./src/pipex.c ./src/utils.c
 
 OBJ = $(SRC:c=o)
 
-SRCB = bonus.c utils.c
+SRCB = ./src/bonus.c ./src/utils.c
 
 OBJB = $(SRCB:c=o)
 

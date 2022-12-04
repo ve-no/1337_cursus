@@ -6,14 +6,13 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:54:00 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/12/02 16:54:01 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/12/04 18:18:40 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../inc/pipex.h"
 
-#include "pipex.h"
-
-int	openfile (char *filename, int mode)
+int	ft_open(char *filename, int mode)
 {
 	if (mode == INFILE)
 	{
@@ -27,11 +26,10 @@ int	openfile (char *filename, int mode)
 		return (open(filename, O_RDONLY));
 	}
 	else
-		return (open(filename, O_CREAT | O_WRONLY | O_TRUNC,
-				S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH));
+		return (open(filename, O_CREAT | O_RDWR | O_TRUNC, 0644));
 }
 
-char	*getPath (char *cmd, char **env)
+char	*get_path(char *cmd, char **env)
 {
 	char	*path;
 	char	*dir;
@@ -47,7 +45,7 @@ char	*getPath (char *cmd, char **env)
 	while (path && str_ichr(path, ':') > -1)
 	{
 		dir = str_ndup(path, str_ichr(path, ':'));
-		bin = path_join(dir, cmd);
+		bin = join_path(dir, cmd);
 		free(dir);
 		if (access(bin, F_OK) == 0)
 			return (bin);
@@ -57,16 +55,16 @@ char	*getPath (char *cmd, char **env)
 	return (cmd);
 }
 
-void	exec (char *cmd, char **env)
+void	exec(char *cmd, char **env)
 {
 	char	**args;
 	char	*path;
 
-	args = str_split(cmd, ' ');
+	args = ft_split(cmd, ' ');
 	if (str_ichr(args[0], '/') > -1)
 		path = args[0];
 	else
-		path = getPath(args[0], env);
+		path = get_path(args[0], env);
 	execve(path, args, env);
 	write(STDERR, "pipex: ", 7);
 	write(STDERR, cmd, str_ichr(cmd, 0));
@@ -74,13 +72,15 @@ void	exec (char *cmd, char **env)
 	exit(127);
 }
 
-void	redir (char *cmd, char **env, int fdin)
+void	redir(char *cmd, char **env, int fdin)
 {
 	pid_t	pid;
 	int		pipefd[2];
 
 	pipe(pipefd);
 	pid = fork();
+	if (pid < 0)
+		return (perror("Fork"));
 	if (pid)
 	{
 		close(pipefd[1]);
@@ -98,15 +98,15 @@ void	redir (char *cmd, char **env, int fdin)
 	}
 }
 
-int	main (int ac, char **av, char **env)
+int	main(int ac, char **av, char **env)
 {
 	int	fdin;
 	int	fdout;
 
 	if (ac == 5)
 	{
-		fdin = openfile(av[1], INFILE);
-		fdout = openfile(av[4], OUTFILE);
+		fdin = ft_open(av[1], INFILE);
+		fdout = ft_open(av[4], OUTFILE);
 		dup2(fdin, STDIN);
 		dup2(fdout, STDOUT);
 		redir(av[2], env, fdin);

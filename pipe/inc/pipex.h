@@ -6,7 +6,7 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:54:13 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/12/02 16:54:15 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/12/04 13:02:55 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define PIPEX_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
 # include <fcntl.h>
 # include <sys/wait.h>
@@ -25,10 +26,10 @@
 # define INFILE 0
 # define OUTFILE 1
 
-char	*path_join (char *path, char *bin);
-int		str_ncmp (char *str1, char *str2, int n);
-int		str_ichr (char *str, char c);
-char	*str_ndup (char *str, unsigned int n);
-char	**str_split (char *str, char sep);
+char	*join_path(char *path, char *bin);
+int		str_ncmp(char *str1, char *str2, int n);
+int		str_ichr(char *str, char c);
+char	*str_ndup(char *str, unsigned int n);
+char	**ft_split(char *str, char sep);
 
 #endif

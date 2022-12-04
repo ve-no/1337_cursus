@@ -6,13 +6,25 @@
 /*   By: ael-bako <ael-bako@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:54:20 by ael-bako          #+#    #+#             */
-/*   Updated: 2022/12/04 10:01:01 by ael-bako         ###   ########.fr       */
+/*   Updated: 2022/12/04 18:18:30 by ael-bako         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "../inc/pipex.h"
 
-char	*path_joi(char *path, char *bin)
+int	str_ichr(char *str, char c)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] && str[i] != c)
+		i++;
+	if (str[i] == c)
+		return (i);
+	return (-1);
+}
+
+char	*join_path(char *path, char *bin)
 {
 	char	*joined;
 	int		i;
@@ -41,18 +53,6 @@ int	str_ncmp(char *str1, char *str2, int n)
 	return (*str2 - *str1);
 }
 
-int	str_ichr(char *str, char c)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] && str[i] != c)
-		i++;
-	if (str[i] == c)
-		return (i);
-	return (-1);
-}
-
 char	*str_ndup(char *str, unsigned int n)
 {
 	char				*duped;
@@ -66,7 +66,7 @@ char	*str_ndup(char *str, unsigned int n)
 	return (duped);
 }
 
-char	**str_split(char *str, char sep)
+char	**ft_split(char *str, char sep)
 {
 	char	**tab;
 	int		count;
