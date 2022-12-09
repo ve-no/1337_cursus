@@ -6,11 +6,11 @@ CFLAGS = -Wall -Wextra -Werror
 
 INC = ./inc/pipex.h
 
-SRC = ./src/pipex.c ./src/utils.c
+SRC = ./src/pipex.c ./src/string_utils.c ./src/pipex_utils.c
 
 OBJ = $(SRC:c=o)
 
-SRCB = ./src/bonus.c ./src/utils.c
+SRCB = ./src/bonus.c ./src/string_utils.c ./src/pipex_utils.c
 
 OBJB = $(SRCB:c=o)
 
@@ -22,7 +22,7 @@ $(NAME): $(OBJ)
 	@echo "\n\033[0mDone !"
 
 %.o: %.c
-	@printf "\033[0;33mGenerating pipex objects... %-10.10s\r" $@
+	@printf "\033[0;33mGenerating pipex objects... %-300.300s\r" $@
 	@${CC} ${CFLAGS} -c $< -o $@
 
 clean:

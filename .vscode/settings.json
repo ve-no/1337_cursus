@@ -6,7 +6,8 @@
 		"stdarg.h": "c",
 		"ft_printf.h": "c",
 		"errno.h": "c",
-		"pipex.h": "c"
+		"pipex.h": "c",
+		"unistd.h": "c"
 	},
 	"C_Cpp.errorSquiggles": "Disabled"
 }
