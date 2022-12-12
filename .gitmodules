@@ -17,3 +17,6 @@
 	path = examRank-02
 	url = git@github.com:Aelbakouri/examRank-02.git
 
+[submodule "so_long"]
+	path = so_long
+	url = git@github.com:Aelbakouri/so_long.git
