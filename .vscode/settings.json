@@ -1,13 +1,15 @@
 {
-	"files.associations": {
-		"libft.h": "c",
-		"fcntl.h": "c",
-		"libftprintf.h": "c",
-		"stdarg.h": "c",
-		"ft_printf.h": "c",
-		"errno.h": "c",
-		"pipex.h": "c",
-		"unistd.h": "c"
-	},
-	"C_Cpp.errorSquiggles": "Disabled"
+  "files.associations": {
+    "*.conf": "bat",
+    "libft.h": "c",
+    "fcntl.h": "c",
+    "libftprintf.h": "c",
+    "stdarg.h": "c",
+    "ft_printf.h": "c",
+    "errno.h": "c",
+    "pipex.h": "c",
+    "unistd.h": "c",
+    "stdlib.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }
