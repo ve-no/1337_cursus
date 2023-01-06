@@ -1,0 +1,10 @@
+{
+	"files.associations": {
+		"*.conf": "bat",
+		"ft_printf.h": "c"
+	},
+	"cSpell.words": [
+		"putendl"
+	],
+	"C_Cpp.errorSquiggles": "disabled"
+}
