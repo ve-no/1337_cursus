@@ -24,3 +24,7 @@
 [submodule "push_swap"]
 	path = push_swap
 	url = git@github.com:Aelbakouri/push_swap.git
+
+[submodule "philosophers"]
+	path = philosophers
+	url = git@github.com:Aelbakouri/philosophers.git
