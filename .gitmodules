@@ -28,3 +28,7 @@
 [submodule "philosophers"]
 	path = philosophers
 	url = git@github.com:Aelbakouri/philosophers.git
+
+[submodule "minishell"]
+	path = minishell
+	url = git@github.com:Aelbakouri/minishell.git
