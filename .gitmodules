@@ -1,34 +1,38 @@
 [submodule "libft"]
 	path = libft
-	url = git@github.com:Aelbakouri/libft.git
+	url = git@github.com:ve-no/libft.git
 [submodule "ft_printf"]
 	path = ft_printf
-	url = git@github.com:Aelbakouri/ft_printf.git
+	url = git@github.com:ve-no/ft_printf.git
 
 [submodule "get_next_line"]
 	path = get_next_line
-	url = git@github.com:Aelbakouri/get_next_line.git
+	url = git@github.com:ve-no/get_next_line.git
 
 [submodule "Pipex"]
 	path = Pipex
-	url = git@github.com:Aelbakouri/Pipex.git
+	url = git@github.com:ve-no/Pipex.git
 
 [submodule "examRank-02"]
 	path = examRank-02
-	url = git@github.com:Aelbakouri/examRank-02.git
+	url = git@github.com:ve-no/examRank-02.git
 
 [submodule "so_long"]
 	path = so_long
-	url = git@github.com:Aelbakouri/so_long.git
+	url = git@github.com:ve-no/so_long.git
 
 [submodule "push_swap"]
 	path = push_swap
-	url = git@github.com:Aelbakouri/push_swap.git
+	url = git@github.com:ve-no/push_swap.git
 
 [submodule "philosophers"]
 	path = philosophers
-	url = git@github.com:Aelbakouri/philosophers.git
+	url = git@github.com:ve-no/philosophers.git
 
 [submodule "minishell"]
 	path = minishell
-	url = git@github.com:Aelbakouri/minishell.git
+	url = git@github.com:ve-no/minishell.git
+
+[submodule "CPP_MODULES"]
+	path = CPP_MODULES
+	url = git@github.com:ve-no/CPP_MODULES.git
