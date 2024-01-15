@@ -43,3 +43,9 @@
 [submodule "inception"]
 	path = inception
 	url = git@github.com:ve-no/inception.git
+[submodule "webServ"]
+	path = webServ
+	url = git@github.com:ve-no/webServ.git
+[submodule "NetPractice"]
+	path = NetPractice
+	url = git@github.com:ve-no/NetPractice.git
