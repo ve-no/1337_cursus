@@ -60,3 +60,9 @@
 	path = CIRCLE_5/webServ
 	url = git@github.com:ve-no/webServ.git
 
+[submodule "CIRCLE_4/CPP_MODULES"]
+	path = CIRCLE_4/CPP_MODULES
+	url = git@github.com:ve-no/CPP_MODULES.git
+[submodule "CIRCLE_4/NetPractice"]
+	path = CIRCLE_4/NetPractice
+	url = git@github.com:ve-no/NetPractice.git
