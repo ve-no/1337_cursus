@@ -69,3 +69,6 @@
 [submodule "CIRCLE_5/inception"]
 	path = CIRCLE_5/inception
 	url = git@github.com:ve-no/inception.git
+[submodule "CIRCLE_5/webServ"]
+	path = CIRCLE_5/webServ
+	url = git@github.com:ve-no/webServ.git
