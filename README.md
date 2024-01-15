@@ -22,7 +22,7 @@
 |17|04|[**CPP_Module_02**](https::/github.com/ve-no/CPP_MODULES/MODULE_2/)|C++|[Subject](https::/github.com/ve-no/1337_cursus/blob/main/CIRCLE_4/en.sub.CPP_Module_02.pdf)| <font color="#5cb85c">✅ **100** | **2022-11-08** | **1.05**
 |18|04|[**CPP_Module_03**](https::/github.com/ve-no/CPP_MODULES/MODULE_3/)|C++|[Subject](https::/github.com/ve-no/1337_cursus/blob/main/CIRCLE_4/en.sub.CPP_Module_03.pdf)| <font color="#5cb85c">✅ **100** | **2022-11-09** | **1.05**
 |19|04|[**CPP_Module_04**](https::/github.com/ve-no/CPP_MODULES/MODULE_4/)|C++|[Subject](https::/github.com/ve-no/1337_cursus/blob/main/CIRCLE_4/en.sub.CPP_Module_04.pdf)| <font color="#5cb85c">✅ **100** | **2022-11-10** | **1.05**
-|20|05|**exam_rank_05** |C|none | <font color="#5cb85c">✅ **100** | **2022-11-11** | **1.05**
+|20|05|**exam_rank_05** |C++|none | <font color="#5cb85c">✅ **100** | **2022-11-11** | **1.05**
 |21|05|[**CPP_Module_05**](https::/github.com/ve-no/CPP_MODULES/MODULE_5/)|C++|[Subject](https::/github.com/ve-no/1337_cursus/blob/main/CIRCLE_5/en.sub.CPP_Module_05.pdf)| <font color="#5cb85c">✅ **100** | **2022-11-12** | **1.05**
 |22|05|[**CPP_Module_06**](https::/github.com/ve-no/CPP_MODULES/MODULE_6/)|C++|[Subject](https::/github.com/ve-no/1337_cursus/blob/main/CIRCLE_5/en.sub.CPP_Module_06.pdf)| <font color="#5cb85c">✅ **100** | **2022-11-13** | **1.05**
 |23|05|[**CPP_Module_07**](https::/github.com/ve-no/CPP_MODULES/MODULE_7/)|C++|[Subject](https::/github.com/ve-no/1337_cursus/blob/main/CIRCLE_5/en.sub.CPP_Module_07.pdf)| <font color="#5cb85c">✅ **100** | **2022-11-14** | **1.05**
