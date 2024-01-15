@@ -66,3 +66,6 @@
 [submodule "CIRCLE_4/NetPractice"]
 	path = CIRCLE_4/NetPractice
 	url = git@github.com:ve-no/NetPractice.git
+[submodule "CIRCLE_5/inception"]
+	path = CIRCLE_5/inception
+	url = git@github.com:ve-no/inception.git
