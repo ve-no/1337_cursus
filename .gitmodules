@@ -1,74 +1,62 @@
 # CIRCLE_0
-[submodule "libft"]
+[submodule "CIRCLE_0/libft"]
 	path = CIRCLE_0/libft
 	url = git@github.com:ve-no/libft.git
 
 # CIRCLE_1
-[submodule "ft_printf"]
+[submodule "CIRCLE_1/ft_printf"]
 	path = CIRCLE_1/ft_printf
 	url = git@github.com:ve-no/ft_printf.git
 
-[submodule "get_next_line"]
+[submodule "CIRCLE_1/get_next_line"]
 	path = CIRCLE_1/get_next_line
 	url = git@github.com:ve-no/get_next_line.git
 
 # CIRCLE_2
-[submodule "Pipex"]
+[submodule "CIRCLE_2/Pipex"]
 	path = CIRCLE_2/Pipex
 	url = git@github.com:ve-no/Pipex.git
 
-[submodule "examRank-02"]
+[submodule "CIRCLE_2/examRank-02"]
 	path = CIRCLE_2/examRank-02
 	url = git@github.com:ve-no/examRank-02.git
 
-[submodule "so_long"]
+[submodule "CIRCLE_2/so_long"]
 	path = CIRCLE_2/so_long
 	url = git@github.com:ve-no/so_long.git
 
-[submodule "push_swap"]
+[submodule "CIRCLE_2/push_swap"]
 	path = CIRCLE_2/push_swap
 	url = git@github.com:ve-no/push_swap.git
 
 # CIRCLE_3
-[submodule "philosophers"]
+[submodule "CIRCLE_3/philosophers"]
 	path = CIRCLE_3/philosophers
 	url = git@github.com:ve-no/philosophers.git
 
-[submodule "minishell"]
+[submodule "CIRCLE_3/minishell"]
 	path = CIRCLE_3/minishell
 	url = git@github.com:ve-no/minishell.git
 
 # CIRCLE_4
-[submodule "CPP_MODULES"]
+[submodule "CIRCLE_4/CPP_MODULES"]
 	path = CIRCLE_4/CPP_MODULES
 	url = git@github.com:ve-no/CPP_MODULES.git
 
-[submodule "cub3d"]
+[submodule "CIRCLE_4/cub3d"]
 	path = CIRCLE_4/cub3d
 	url = git@github.com:ve-no/cub3d.git
 
-[submodule "NetPractice"]
+[submodule "CIRCLE_4/NetPractice"]
 	path = CIRCLE_4/NetPractice
 	url = git@github.com:ve-no/NetPractice.git
 
 # CIRCLE_5
-[submodule "inception"]
-	path = CIRCLE_5/inception
-	url = git@github.com:ve-no/inception.git
-
-[submodule "webServ"]
-	path = CIRCLE_5/webServ
-	url = git@github.com:ve-no/webServ.git
-
-[submodule "CIRCLE_4/CPP_MODULES"]
-	path = CIRCLE_4/CPP_MODULES
-	url = git@github.com:ve-no/CPP_MODULES.git
-[submodule "CIRCLE_4/NetPractice"]
-	path = CIRCLE_4/NetPractice
-	url = git@github.com:ve-no/NetPractice.git
 [submodule "CIRCLE_5/inception"]
 	path = CIRCLE_5/inception
 	url = git@github.com:ve-no/inception.git
+
 [submodule "CIRCLE_5/webServ"]
 	path = CIRCLE_5/webServ
 	url = git@github.com:ve-no/webServ.git
+
