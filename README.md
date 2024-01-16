@@ -31,3 +31,4 @@
 |26|05|**exam_rank_05** |C++|none | <font color="#5cb85c">✅ **100** | **2023-12-13** | **5.23** | <font color="#5cb85c"> **-** | -
 |27|05|[**inception**](https://github.com/ve-no/inception/)|docker|[Subject](https://github.com/ve-no/1337_cursus/blob/main/CIRCLE_5/en.sub.inception.pdf)| <font color="#5cb85c">✅ **100** | **2023-12-31** | **8.24** | <font color="#5cb85c"> + **35.70** | 10042
 
+![plot](./holy_graph.png)
